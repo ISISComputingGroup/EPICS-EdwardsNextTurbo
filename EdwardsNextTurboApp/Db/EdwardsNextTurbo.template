@@ -1107,18 +1107,6 @@ record(bo, "$(P):SVC:RESET:OIL") {
 ##################################################################
 # START OF RECORDS TO SUPPORT GUI.
 
-# Record to indicate whether start/stop button should be displayed in GUI.
-# Hiding the GUI buttons is the strongest permission control we are using - 
-# it is still possible from the database and the controller will reject 
-# the command if not allowed.
-record(bi, "$(P):PMS:STARTSTOPENABLE") {
-  field(DESC, "Start/Stop Enable.")
-  field(SCAN, "Passive")
-  field(VAL, "0")
-  field(PINI, "YES")
-  field(ZNAM, "Disabled")
-  field(ONAM, "Enabled")
-}
 
 # END OF RECORDS TO SUPPORT GUI.
 ##################################################################
@@ -1137,7 +1125,7 @@ record(transform, "$(P):TFM:SPEEDS:PCTORPS") {
   field(CMTD, "Normal motor speed rps.")
   field(CLCD, "A*B/100")
   field(OUTD, "$(P):RBV:NORMALSPEED:RPS PP MS")
-  field(CMTD, "Standby motor speed rps.")
+  field(CMTE, "Standby motor speed rps.")
   field(CLCE, "A*C/100")
   field(OUTE, "$(P):RBV:STANDBYSPEED:RPS PP MS")
 }
