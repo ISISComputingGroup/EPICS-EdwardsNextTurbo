@@ -4,7 +4,7 @@ TOP=../..
 
 include $(TOP)/configure/CONFIG
 
-SCRIPTS=stExample-gui
+SCRIPTS=stExample-gui.eds
 
 # ------------------------
 # Build an IOC Application
@@ -51,6 +51,10 @@ example_EdwardsNextTurbo_LIBS += stream
 example_EdwardsNextTurbo_LIBS += asyn
 # From module calc.
 example_EdwardsNextTurbo_LIBS += calc
+
+example_EdwardsNextTurbo_LIBS += pcre
+
+example_EdwardsNextTurbo_LIBS_WIN32 += oncrpc
 
 # We need to link this IOC Application against the EPICS Base libraries
 example_EdwardsNextTurbo_LIBS += $(EPICS_BASE_IOC_LIBS)
