@@ -25,6 +25,8 @@
 ASYN=$(SUPPORT)/asyn/master
 CALC=$(SUPPORT)/calc/master
 STREAM=$(SUPPORT)/StreamDevice/master
+ONCRPC=$(SUPPORT)/oncrpc/master
+PCRE=$(SUPPORT)/pcre/master
 
 # optional extra local definitions here
 -include $(TOP)/configure/RELEASE.private

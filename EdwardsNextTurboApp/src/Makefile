@@ -52,6 +52,8 @@ EdwardsNextTurbo_OBJS_vxWorks += $(EPICS_BASE_BIN)/vxComLibrary
 #EdwardsNextTurbo_LIBS += xxx
 
 # We need to link this IOC Application against the EPICS Base libraries
+EdwardsNextTurbo_LIBS += stream pcre asyn calc
+EdwardsNextTurbo_LIBS_WIN32 += oncrpc
 EdwardsNextTurbo_LIBS += $(EPICS_BASE_IOC_LIBS)
 
 # ---------------------------------------------------
