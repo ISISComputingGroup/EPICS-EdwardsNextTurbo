@@ -21,3 +21,10 @@ int main(int argc,char *argv[])
     epicsExit(0);
     return(0);
 }
+
+// to force an external symbol on Windows and so generate a .lib file
+#include <epicsExport.h>
+epicsShareExtern void dummy()
+{
+	
+}
