@@ -52,6 +52,10 @@ example_EdwardsNextTurbo_LIBS += asyn
 # From module calc.
 example_EdwardsNextTurbo_LIBS += calc
 
+example_EdwardsNextTurbo_LIBS += sscan
+
+example_EdwardsNextTurbo_LIBS += seq pv
+
 example_EdwardsNextTurbo_LIBS += pcre
 
 example_EdwardsNextTurbo_LIBS_WIN32 += oncrpc

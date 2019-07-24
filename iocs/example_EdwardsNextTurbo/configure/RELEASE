@@ -4,6 +4,8 @@ CALC=$(SUPPORT)/calc/master
 STREAM=$(SUPPORT)/StreamDevice/master
 PCRE=$(SUPPORT)/pcre/master
 ONCRPC=$(SUPPORT)/oncrpc/master
+SEQ=$(SUPPORT)/seq/master
+SSCAN=$(SUPPORT)/sscan/master
 
 EDWARDSNEXTTURBO=      $(SUPPORT)/EdwardsNextTurbo/master
 # optional extra local definitions here
